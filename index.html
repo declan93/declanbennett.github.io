@@ -1,113 +1,120 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+    <!-- Declared Vars To Go Here -->
 
-[Link to another page](./another-page.html).
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-There should be whitespace between paragraphs.
+    <!-- Metadata -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+    <link rel="icon" href="mysource_files/favicon.ico">
 
-# Header 1
+    <!-- Page Name and Site Name -->
+    <title>Page Name - Squiz Matrix HTML Example</title>
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mysource_files/style.css" rel="stylesheet">
 
-## Header 2
+  </head>
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+  <body>
 
-### Header 3
+    <div class="container">
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+      <header class="header clearfix" style="background-color: #ffffff">
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+        <!-- Main Menu -->
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
 
-#### Header 4
+        <!-- Site Name -->
+        <h1 class="h3 text-muted">Site Name</h1>
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Level 1</a></li>
+          <li class="active">Level 2</li>
+        </ol>
 
-##### Header 5
+      </header>
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+      <div class="page-heading">
 
-###### Header 6
+        <!-- Page Heading -->
+        <h1>Page Heading</h1>
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+      </div>
 
-### There's a horizontal rule below this.
+      <div class="row">
 
-* * *
+        <div class="col-sm-3">
 
-### Here is an unordered list:
+          <!-- Sub Navigation -->
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#">Level 2</a></li>
+            <li class="active"><a href="#">Level 2</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Level 2</a></li>
+          </ul>
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+        </div>
 
-### And an ordered list:
+        <div class="col-sm-6">
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+          <div class="page-contents">
 
-### And a nested list:
+            <!-- Design Body -->
+            <h2>Sub Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+            <h4>Sub Heading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+            <h4>Sub Heading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+          </div>
 
-### Small image
+        </div>
 
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+        <div class="col-sm-3">
 
-### Large image
+          <!-- Login Section -->
+          <h2>Login</h2>
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+          <!-- Search Section -->
+          <h2>Search</h2>
 
+          <!-- Nested Right Column Content -->
 
-### Definition lists can be used with HTML syntax.
+        </div>
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
+      </div>
+
+      <footer class="footer">
+        <p class="pull-right">
+          <!-- Last Updated Design Area-->
+          Last Updated: Wednesday, January 6, 2016
+        </p>
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
