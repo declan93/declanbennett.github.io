@@ -123,8 +123,11 @@ TPM
 pi_vec_eig[1]*TPM["i","j"]
 pi_vec_eig[2]*TPM["j","i"]
 
-# How about TPM2? Symmetric matrices are always reversible
-pi_vec_eig2[1]*TPM2[1,2] == pi_vec_eig2[2]*TPM2[2,1]
+# How about TPM2? Symmetric matrices are always reversible NB check all permuatiobs of ij ji
+pi_vec_eig2[1]*TPM2[1,2]
+pi_vec_eig2[2]*TPM2[2,1]
+pi_vec_eig2[3]*TPM2[3,4]
+pi_vec_eig2[4]*TPM2[4,3]
 
 # aside Pij =  pi_j/ pi_i * Pji
 pi_vec_eig2[2]/pi_vec_eig2[1] * TPM2[2,1]
