@@ -9,6 +9,11 @@ TPM <- matrix(c(.29,.21,.05,.45,
                 .10,.28,.37,.25,
                 .34,.19,.11,.36),4, byrow = T)
 TPM
+
+### Stationary distribution 
+# A stationary distribution of a Markov chain is a probability distribution that remains unchanged in the Markov chain as time progresses
+# When the chain is ergodic (non-null, persisitent, aperiodic and irreducible) The staionary distribution is unique
+
 # stationary distribution can be found from eigenvectors with eigenvalue = 1 as it is a left eigenvector of the TPM
 # get eigenvector corresponding to eigenvalue = 1 of transposed TPM 
 eig <- eigen(t(TPM))
@@ -110,8 +115,6 @@ TMP3 <- matrix(c(.3,.4,.5,.3,.4,.3,.4,.2,.2),3)
 TMP3
 t(TMP3)
 TMP3%^%100
-
-
 
 ##############################################
 # Reversibility. Needs to satisfy detailed balance. pi_i Pij = pi_j Pji
