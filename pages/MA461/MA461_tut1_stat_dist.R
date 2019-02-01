@@ -105,8 +105,24 @@ pi_vec_eig2
 pi_vec2[1,]
 
 ##############################################
-## Example of 3x3 stochastic that is symmetric (non uniform stationary)
+## Example of 3x3 stochastic that is nonsymmetric (non uniform stationary)
 TMP3 <- matrix(c(.3,.4,.5,.3,.4,.3,.4,.2,.2),3) 
 TMP3
 t(TMP3)
 TMP3%^%100
+
+
+
+##############################################
+# Reversibility. Needs to satisfy detailed balance. pi_i Pij = pi_j Pji
+# Q is TPM reversible
+TPM
+pi_vec_eig[1]*TPM["i","j"]
+pi_vec_eig[2]*TPM["j","i"]
+
+# How about TPM2? Symmetric matrices are always reversible
+pi_vec_eig2[1]*TPM2[1,2] == pi_vec_eig2[2]*TPM2[2,1]
+
+# aside Pij =  pi_j/ pi_i * Pji
+pi_vec_eig2[2]/pi_vec_eig2[1] * TPM2[2,1]
+
