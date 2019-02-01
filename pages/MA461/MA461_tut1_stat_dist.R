@@ -34,12 +34,13 @@ pi_vec <- TPM%^%100
 pi_vec[1,]
 pi_vec_eig
 
-# Proof that for unique pi
+# Demonstrate that for unique pi
 #  pi = pi * TPM
 pi_vec[1,]%*%TPM
 
 
-# Recal chapman kolmogorov eq. P(n) = P**n 
+# Recall chapman kolmogorov eq. P(n) = P**n i.e probability transition in n steps corresponds to P**n
+# Rename rows cols
 colnames(TPM) <- c("i","j","k","l")
 rownames(TPM) <- c("i","j","k","l")
 TPM
@@ -50,9 +51,9 @@ TPM["i","j"]
 # Probability of going from i to j where nsteps = 2
 (TPM%^%2)["i","j"]
 
-# and so on to ..
+# and so on ..
  
-# proof stationary does NOT always == limiting distribution
+# Demonstrate that the stationary distribution does NOT always == limiting distribution
 P <- matrix(c(0,1,1,0),2)
 P
 
@@ -85,15 +86,14 @@ TPM2
 t(TPM2)
 TPM2 == t(TPM2)
 
-
+# Eigenvalue decomp
 eig2 <- eigen(t(TPM2))
 eig2
 #eigenvectors
 e_vec2 <- eig2$vectors
 # eigenvalue
 e_val2 <- eig2$values
-e_val2
-e_vec2
+
 # rescale for probabilities = lambda is col 1 
 pi_vec_eig2 <- e_vec2[,1]/sum(e_vec2[,1]) 
 
@@ -105,7 +105,7 @@ pi_vec_eig2
 pi_vec2[1,]
 
 ##############################################
-## Example of 3x3 stochastic that is symmetric
+## Example of 3x3 stochastic that is symmetric (non uniform stationary)
 TMP3 <- matrix(c(.3,.4,.5,.3,.4,.3,.4,.2,.2),3) 
 TMP3
 t(TMP3)
