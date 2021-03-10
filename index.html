@@ -99,7 +99,10 @@
 
           <!-- Search Section -->
          <h2>Timeline</h2>
-        <a href="https://twitter.com/intent/tweet?button_hashtag=declanbennett5&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #declanbennett5</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          {% plugin_type twitter_url *options %}
+
+<!-- Example for timeline of the **jekyllrb** user with a maximum of 5 Tweets and with a width of 500px -->>
+{% twitter https://twitter.com/jekyllrb maxwidth=500 limit=5 %}
           <!-- Nested Right Column Content -->
 
         </div>
