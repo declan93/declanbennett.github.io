@@ -4,3 +4,6 @@ description: [description here]
 timezone: TIMEZONE
 encoding: UTF-8
 future: true
+
+plugins:
+  - jekyll-gist
