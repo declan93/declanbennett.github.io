@@ -7,3 +7,4 @@ future: true
 
 plugins:
   - jekyll-gist
+  - jekyll-twitter-plugin
